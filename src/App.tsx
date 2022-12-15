@@ -19,6 +19,8 @@ function App() {
             &rarr;<Link to={"./animation"}>animation </Link>,
             <Link to={"./variants"}>variants </Link>,
             <Link to={"./demoGestures"}>DemoGestures </Link>,
+            <Link to={"./DemoMotionValue"}>DemoMotionValue </Link>,
+            <Link to={"./SVGAnima"}>SVGAnima </Link>,
           </Menu>
           <Outlet />
           {/* <ReactQueryDevtools initialIsOpen={false} /> */}

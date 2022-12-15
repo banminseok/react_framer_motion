@@ -8,6 +8,7 @@ import DemoVariants from "./routes/DemoVariants";
 import DemoGestures from "./routes/DemoGestures";
 import DemoMotionValue from "./routes/DemoMotionValue";
 import SVGAnima from "./routes/SVGAnima";
+import AnimaPre from "./routes/AnimaPre";
 
 
 const BASE_URL = process.env.PUBLIC_URL;
@@ -46,6 +47,10 @@ const defaultRouter = createBrowserRouter([
       {
         path: "SVGAnima",
         element: <SVGAnima />,
+      },
+      {
+        path: "AnimaPre",
+        element: <AnimaPre />,
       },
     ],
     errorElement: <NotFound />

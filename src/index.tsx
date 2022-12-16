@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { RouterProvider } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import defaultRouter from './Router';
 import './index.css';
+import Challenge from './Challenge';
+import GlobalStyle from './components/GlobalStyle';
+import { ThemeProvider } from 'styled-components';
+import { darkTheme } from './theme';
 
 const queryClient = new QueryClient();
 
@@ -16,7 +18,11 @@ root.render(
   <React.StrictMode>
     <RecoilRoot>
       <QueryClientProvider client={queryClient}>
-        <RouterProvider router={defaultRouter} />
+        {/* <RouterProvider router={defaultRouter} /> */}
+        <ThemeProvider theme={darkTheme}>
+          <GlobalStyle />
+          <Challenge/>
+        </ThemeProvider>        
       </QueryClientProvider>
     </RecoilRoot>
   </React.StrictMode>

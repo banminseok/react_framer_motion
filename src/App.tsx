@@ -22,6 +22,8 @@ function App() {
             <Link to={"./DemoMotionValue"}>DemoMotionValue </Link>,
             <Link to={"./SVGAnima"}>SVGAnima </Link>,
             <Link to={"./AnimaPre"}>AnimaPre </Link>,
+            <Link to={"./DemoLayout"}>DemoLayout </Link>,
+            <Link to={"./Demo4Box"}>Demo4Box </Link>,
           </Menu>
           <Outlet />
           {/* <ReactQueryDevtools initialIsOpen={false} /> */}
